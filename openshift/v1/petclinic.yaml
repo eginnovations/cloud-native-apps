@@ -42,3 +42,17 @@ spec:
     targetPort: 8080
   selector:
     name: vpetclinic
+ ---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: vpetclinic
+  namespace: default
+spec:
+  # path: /
+  to:
+    kind: Service
+    name: vpetclinic
+  port:
+    targetPort: 8080
+---
