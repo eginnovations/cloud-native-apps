@@ -1,0 +1,16 @@
+{
+  "family": "petclinic",
+  "containerDefinitions": [
+    {
+      "name": "petclinic",
+      "image": "egapm/springboot:petclinic-tomcat-openjdk8jre",
+      "cpu": 200,
+      "memory": 512
+    }
+  ],
+  "requiresCompatibilities": [
+    "EC2"
+  ],
+  "memory": "512",
+  "cpu": "250"
+}
