@@ -29,7 +29,7 @@ spec:
           privileged: true
         env:
         - name: JAVA_OPTS
-          value: "-javaagent:/opt/egbtm/eg_btm.jar"
+          value: "-javaagent:/opt/egbtm/eg_btm.jar -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=3333 -Dcom.sun.management.jmxremote.rmi.port=3333"
         volumeMounts:
         - name: btmmount
           mountPath: /opt/egbtm
