@@ -1,2 +1,2 @@
 # cloud-native-apps
-Deployments files/scripts for demo apps
+Deployment files/scripts for demo apps
